@@ -1,5 +1,12 @@
 <h1>HI</h1>
 
+{% load static %}
+
+<img src="{% static 'portfolio/x.png' %}" >
+
+<a href="{% static 'portfolio/y.png' %}"> just a picture</a>
+
+
 {% for project in projects %}
 
 <img src= {{project.image.url}}  width="250" height="200">
